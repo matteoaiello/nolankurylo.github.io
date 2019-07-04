@@ -1,0 +1,70 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+p, h5 {
+    font-family: Helvetica, sans-serif
+}
+
+#banner-image {
+    background-image: url("../img/IMG_0544.jpeg");
+    height: 70vh; 
+    
+}
+
+.chevron {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 3.5rem;
+    -webkit-animation: pulse 2s infinite;
+    animation: hover-me .6s infinite ease-in-out alternate; 
+    color: grey;
+}
+
+.chevron:hover {
+    cursor: pointer;
+}
+@keyframes hover-me {
+  100% { transform: translate3d(0, 5px, 0); }
+}
+
+.card {
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+.centerize {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+    
+.parrallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title-text {
+    color: #FFF; 
+    font-size: 50px !important ;
+    font-family: Comic Sans MS, Comic Sans, cursive  
+}
+
+.top-nav-collapse {
+    background-color: #4285F4;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+    .title-text {
+        font-size: 1.5em !important;
+    }
+}
