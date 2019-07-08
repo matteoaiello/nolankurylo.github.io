@@ -18,113 +18,182 @@
     </head>
 
     <body>
-        <header>
-            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#!">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#!">Disabled</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav> -->
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#"><strong>Nolan's Github</strong></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Projects <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Me</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <div id="page-container">
+            <div id="content-wrap">
+                <header>
+                    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+                        <a class="navbar-brand" href="#"><strong>Nolan's Github</strong></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false"> Projects </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">House Sharing - Mobile App</a>
+                                        <a class="dropdown-item" href="#">Raspberry Pi Security Camera</a>
+                                        <a class="dropdown-item" href="#">Ergonomyx E-commerce Website</a>
+                                        <a class="dropdown-item" href="#">My Github Website</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Me</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
 
-        </header>
-
-        <div class="jumbotron jumbotron-fluid parrallax section" id='banner-image'>
-            
-            <div class="centerize" >
-                <h1 class="title-text" data-aos="zoom-in" >Nolan's Github</h1>
-            </div>
-        </div>
-        <div class="text-center" >
-            <h3>Welcome to My Github!</h3>
-            <i class="fas fa-chevron-down chevron"></i>
-        </div>
-        <div class="container" id="page-content">
-            <div class="row" >
-                <div class="col-md-6 col-sm-12">
-                    <div class="card shadow" data-aos="fade-right">
-                        <div class="card-body">
+                </header>
+                <div class="jumbotron jumbotron-fluid parrallax section" id='banner-image'></div>
+                <div class="text-center">
+                    <h1 style="margin-top: 75px" data-aos="zoom-in" class="title-text">Welcome to My Github Website!</h1>
+                    <p class="text-muted">Scroll down or press the arrow to learn more about my experience!</p>
+                    <br>
+                    <i class="fas fa-chevron-down chevron intro-start"></i>
+                </div>
+                <div class="container" >
+                    <div class="row text-row" id="card-1" >
+                        <div class="col-md-6 col-sm-12" data-aos="fade-right">
                             <p class="text-center">
                                 While I am working towards a Bachelor's Degree in Software Engineering at the University of Victoria, 
-                                I have decided to take on some extracurricular projects.
+                                I have decided to take on some extracurricular projects that involve Web Development and Software
+                                Engineering.
                             </p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-sm-12"></div>
-                <div class="col-md-6 col-sm-12 text-right">
-                    <div class="card shadow" data-aos="fade-left">
-                        <div class="card-body">
+                    <div class="row text-row">
+                        <div class="col-md-6 col-sm-12"></div>
+                        <div class="col-md-6 col-sm-12 text-right" data-aos="fade-left">
                             <p class="text-center">
-                                My interest for these projects came from my first (8 month) Engineering Co-op as a Full Stack Developer at
-                                a small start up company called <a href="https://store.ergonomyx.com">Ergonomyx Technologies 
-                                Canada.</a>
+                                My interest for these projects started during my first (8 month) Engineering Co-op as a Full Stack Developer at
+                                a small start up company called Ergonomyx Technologies 
+                                Canada. I was priviliged with building a Full Stack E-Commerce Website to market the company's products.
                             </p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <div class="card shadow" data-aos="fade-right">
-                        <div class="card-body">
+                    <div class="row text-row">
+                        <div class="col-md-6 col-sm-12" data-aos="fade-right">
                             <p class="text-center">
-                                During my Co-op, I was priviliged with building a Full Stack
-                                E-Commerce Website to market the company's products. I was able to learn
-                                as well as implement a static front-end that communicated with 
-                                a relational database via a RESTful API. 
-                                <a href="#">More on that here</a>
-
+                                I thoroughly enjoyed learning about and developing Web Applications at Ergonomyx. However, I was eager to dive deeper 
+                                into the Software Engineering Industry. Listed below are projects I have developed that have contributed to my
+                                experience as a Software Engineering student.
                             </p>
+                        </div>
+                    </div>
+                    <div class="text-center" style="margin-top: 80px;">
+                        <i class="fas fa-chevron-down chevron intro-end"></i>
+                    </div>
+                    <div class="row text-row" id="project-directory">
+                        <div class="col">
+                            <h2 class="text-center">Projects</h2>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card shadow project-card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-12 text-center">
+                                                    <img class="card-img-top" style="padding:15px; width: 120px; height: 220px;" src="/static/img/homescreen.png" alt="House Sharing App Image">
+                                                </div>
+                                                <div class="col-md-8 col-sm-12 text-center">
+                                                    <h4 class="card-title">House Sharing Mobile Application</h4>
+                                                    <p class="card-text text-muted"> An IOS mobile app that keeps track of IOUs for groups of people. Uses React
+                                                        Native, Node.js and PostgreSQL.
+                                                    </p>
+                                                    <a href="#!" class="btn btn-primary">More about this app</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card shadow project-card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-12 text-center">
+                                                    <img class="card-img-top" style="padding:15px; width: 210px; height: 200px;" src="/static/img/pipirdiagram.png"
+                                                        alt="Raspberry Pi + PIR Image">
+                                                </div>
+                                                <div class="col-md-7 col-sm-12 text-center">
+                                                    <h4 class="card-title">Raspberry Pi Security Camera</h4>
+                                                    <p class="card-text text-muted"> A Pi, Camera and PIR system that sends video clips to a website when movement
+                                                        is detected. Uses Python, Pug, Node.js and MongoDB.</p>
+                                                    <a href="#!" class="btn btn-primary">More about this project</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card shadow project-card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-12 text-center">
+                                                    <img class="card-img-top" style="padding:15px; width: 150px; height: 150px;" src="/static/img/ergonomyx_minilogo_trans (1).png"
+                                                        alt="Ergonomyx Logo">
+                                                </div>
+                                                <div class="col-md-7 col-sm-12 text-center">
+                                                    <h4 class="card-title">Ergonomyx Technologies E-commerce Website</h4>
+                                                    <p class="card-text text-muted">A Full-Stack application built from scratch to market the company's products. 
+                                                        Uses HTML/CSS/JS, Flask, Node.js and PostgreSQL.</p>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top:30px">
+                                                <div class="col text-center">
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="https://store.ergonomyx.com" class="btn btn-success">Check out the website!</a>
+                                                        <a href="#!" class="btn btn-primary">More about this project</a>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card shadow project-card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-12 text-center">
+                                                    <img class="card-img-top" style="margin-top: -20px; width: 200px; height: 200px;" src="/static/img/github.png"
+                                                        alt="Github Logo">
+                                                </div>
+                                                <div class="col-md-7 col-sm-12 text-center">
+                                                    <h4 class="card-title">Github Website</h4>
+                                                    <p class="card-text text-muted"> The website you are currently on! I use it to display my projects and experience.
+                                                        Uses HTML/CSS/JS.
+                                                    </p>
+                                                    <a href="#!" class="btn btn-primary">More about this project</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-sm-12"></div>
-                <div class="col-md-6 col-sm-12 text-right">
-                    <div class="card shadow" data-aos="fade-left">
-                        <div class="card-body">
-                            <p class="text-center">
-                                Although I thoroughly enjoyed web development at Ergonomyx, I was eager to dive deeper 
-                                into the Software Engineering Industry.
-                                <br>
-                                <br>
-                                The following projects have allowed me to grow as a software developer, ultimately
-                                allowing me to learn new programming languages and explore differnt areas of software development.
-                            </p>
-                        </div>
-                    </div>
+            <footer id="footer">
+                <div class="page-footer font-small special-color-dark pt-4">
+                    <ul class=" social">
+                        <li class="list-inline-item fb"><a class="btn-floating mx-1" href="https://www.facebook.com/profile.php?id=100009207184261"><i
+                                    class="fab fa-facebook-f"> </i></a></li>
+                        <li class="list-inline-item tw"><a class="btn-floating mx-1" href="https://twitter.com/nolankurylo"><i class="fab fa-twitter">
+                                </i></a></li>
+                        <li class="list-inline-item li"><a class="btn-floating mx-1" href="https://www.linkedin.com/in/nolan-kurylo-03bb2a154/"><i
+                                    class="fab fa-linkedin-in"> </i></a></li>
+                        <li class="list-inline-item gi"><a class="btn-floating mx-1" href="https://github.com/nolankurylo"><i class="fab fa-github"></i></a></li>
+                    </ul>
                 </div>
-            </div>
+            </footer>
         </div>
         
         
