@@ -25,7 +25,7 @@ nav {
     line-height: 40px
 }
 .black {
-    background-color: #333333 !important;
+    background-color: #343A43 !important;
   }
 
 #banner-image {
@@ -199,3 +199,6 @@ footer {
 	color: #EDEFF1 !important;
 }
 
+.h1-title {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
