@@ -27,11 +27,20 @@ nav {
 .black {
     background-color: #343A43 !important;
   }
+.black-background {
+    background-color: #343A43 !important;
+}
 
 #banner-image {
     background-image: url("../img/IMG_0544.jpeg");
     height: 60vh; 
     
+}
+#banner-image-1 {
+    background-image: url("../img/IMG_0544.jpeg");
+    background-color: white;
+    height: 60vh;
+
 }
 .text-row {
     margin-top: 75px;
@@ -84,7 +93,13 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%)
 }
+.dropdown-menu li:hover {
+    visibility: visible;
+}
     
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 .parrallax {
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -202,3 +217,4 @@ footer {
 .h1-title {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
+

@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
             integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <!-- AOS Scroll -->
+        <!-- AOS Scroll -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!--Local style sheets-->
         <link rel="stylesheet" href="../static/css/index.css">
@@ -31,14 +32,14 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="/">Home </a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Projects </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item active" href="#">House Sharing - Mobile App</a>
-                                        <a class="dropdown-item" href="./securityapp.html">Security Camera Application</a>
+                                        <a class="dropdown-item" href="./app.html">House Sharing - Mobile App </a>
+                                        <a class="dropdown-item active" href="#">Security Camera Application<span class="sr-only">(current)</span></a>
                                         <a class="dropdown-item" href="./ergonomyx.html">Ergonomyx E-commerce Website</a>
                                     </div>
                                 </li>
@@ -49,89 +50,62 @@
                         </div>
                     </nav>
                 </header>
+                
                 <div class="container">
-                    <div class="row align-items-center" style="margin-bottom: 100px; margin-top: 100px;">
+                    <div class="row " style="margin-bottom: 100px; margin-top: 150px;">
                         <div class="col-md-5 col-sm-12">
-                            <img src="../static/img/homescreen.png" alt="Mobile App " height="480" width="250">
+                            <img src="../static/img/pi.png" alt="Raspberry Pi 3" style="border-radius: 12px;" height="260" width="320">
                         </div>
                         <div class="col-md-7 col-sm-12 text-left">
-                            <h1 class="h1-title">House Sharing - Mobile App</h1>
+                            <h1 class="h1-title">Security Camera Application</h1>
                             <br>
                             <p>
-                                During my first coop work term, I decided to learn a new programming language and 
-                                build a mobile app that others could use. This project was one that I did on my 
-                                own time outside of my coop.
+                                During the summer of 2019, I was completing the second half of my 8-month 
+                                (first) co-op at Ergonomyx Technologies Canada. While I enjoyed the web development aspect of my position,
+                                I was eager to learn about embedded systems and how the software of an application interacted at the hardware level.
                             </p>
                             <p>
-                                This app serves as an IOU system for groups of people.
-                                The idea for this app came from living in a house with some of my schoolmates and the 
-                                troubles of dividing up group expenses. 
-                            </p>
-                            <p>
-                                For example, if myself and my three roommates were to hop in an cab ride to go downtown, that would 
-                                have costed about $8. It makes the most sense to have one person pay
-                                for the cab and the rest of us pay that person back afterwards. However, who wants to dig around 
-                                for a toonie or send a $2 e-transfer?
-                            </p>
-                            <p>
-                                With this app, IOUs between groups of people can be tracked and acculumated to a point where there 
-                                is enough money owed to pay the other person back. 
+                                I decided to start working on a project that would introduce me to embedded systems combined with some of 
+                                my web development knowledge. 
                             </p>
                         </div>
                     </div>
-                    <div class="row align-items-center" >
+                    <div class="row align-items-center">
                         <div class="col-md-7 col-sm-12 text-left">
-                            <h1 class="h1-title">How It Works</h1>
                             <br>
                             <p>
-                                When a user first creates an account, they are brought to the Home screen shown in the image above. By navigating to the "Find Friends" tab, 
-                                they have the opportunity to send friend requests to other users in the database. While, friend requests can be accepted/declined 
-                                from the "You" tab, a list of account information and current friends is displayed.
+                                The project consists of a Raspberry Pi 3, Camera, and Passive Infrared (PIR) Sensor.
+                                Connected by a breadboard, the PIR sensor is activated when motion is detected within
+                                the vicinity. Upon the sensor being activated, the camera that is directly connected to 
+                                the Pi begins recording. 
                             </p>
                             <p>
-                                From the top right corner of the Home screen, users can create a new "House" by entering a House name
-                                and selecting which of their friends they want to include.
-                                When a House has been created, users included in the House have access to the screen as shown to the right.
-                            </p>
-                            <p>
-                               This screen shows overall balances as well as individual balances between the current user and other
-                               users in the House. 
+                                After 5 seconds, the video recording is saved and sent via HTTP protocal to a remote Node.js web
+                                server. Upon the request to the server being received successfully, the Pi's program awaits
+                                the next detection of movement. 
                             </p>
                         </div>
                         <div class="col-md-5 col-sm-12 text-center">
-                            <img src="../static/img/mainscreen.png" alt="Mobile App " height="500" width="290">
+                            <img src="../static/img/bb.jpg" alt="PIR Sensor" style="border-radius: 15px;" height="340" width="360">
                         </div>
                     </div>
                     <div class="row align-items-center" style="margin-bottom: 100px; margin-top: 100px;">
                         <div class="col-md-5 col-sm-12">
                             <div class="row">
                                 <div class="col">
-                                    <img src="../static/img/moneyiou.png" alt="Mobile App " height="380" width="210">
-                                    <img src="../static/img/itemiou.png" alt="Mobile App " height="377" width="208">
+                                    <img src="../static/img/website.png" alt="Mobile App " height="300" width="400">
                                 </div>
                             </div>
-                            
                         </div>
                         <div class="col-md-7 col-sm-12 text-left">
-                            <p>
-                                When a user wishes to create an IOU with one or more of the users in the house, they can press
-                                the Create IOU button. As seen on the left, there are two types of IOUs a user can create.
-                                The screen on the left being for IOUs that need to be split with money.
-                            </p>
-                            <p>
-                                The screen on the right illustrates an IOU for a physical object, where it would be easier to
-                                just split it for what it actually is. 
-                            </p>
-                            <p>
-                                With this app, IOUs between groups of people can be tracked and acculumated to a point where there 
-                                is enough money owed to pay the other person back. 
-                            </p>
+                            On the web server side, when the request from the Pi is received, the image is converted into JPG format
+                            and saved locally. Also, the image's information (filename, timestamp, etc.) is saved in a MongoDB database.
+                            Once the information has been properly stored, a text message is sent to my phone via Twilio to alert me of the detection.
+                            The web server also hosts a local website that displays each video clip with the ability to manage each video and its information,
+                            as seen to the left. 
                         </div>
                     </div>
                 </div>
-                
-               
-
             </div>
             <footer id="footer">
                 <div class="page-footer font-small special-color-dark pt-4">
